@@ -14,6 +14,7 @@ document.onreadystatechange = function () {
 };
 
 function onAppActivate() {
+  console.log("Contact sidebar test")
   var textElement = document.getElementById('apptext');
   var getContact = client.data.get('contact');
   getContact.then(showContact).catch(handleErr);
